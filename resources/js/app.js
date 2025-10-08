@@ -1,5 +1,4 @@
-//
-import 'resources/js/app.js'
+// resources/js/app.js
 import '../css/app.css'
 import Alpine from 'alpinejs'
 
