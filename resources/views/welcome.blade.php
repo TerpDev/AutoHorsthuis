@@ -1,172 +1,136 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.app')
+@section('title', 'Auto Horsthuis')
 
-    <title>Laravel</title>
+@section('content')
+    <!-- Hero -->
+    <div class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
+         style="background-image: url('{{ asset('images/herobg.webp') }}');">
+        <div class="absolute z-10 inset-0 bg-black/40"></div>
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 font-body">
+            <header class="pt-16 lg:pt-24 flex flex-col items-center text-center gap-6">
+                <div class="flex flex-wrap items-center justify-center gap-2">
+                    <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">APK</span>
+                    <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Onderhoud</span>
+                    <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Diagnose</span>
+                    <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Banden & Remmen</span>
+                </div>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-<x-navbar/>
-<!-- Hero -->
-<div class="min-h-screen flex items-center justify-center
-            bg-cover bg-center bg-no-repeat"
-     style="background-image: url('{{ asset('images/biefstuk.webp') }}');">
+                <h1 class="tracking-wide leading-[0.95] text-white drop-shadow-xl text-5xl sm:text-6xl lg:text-7xl bbh-sans-bogle-regular">
+                    Welkom bij <span class="block">Auto Horsthuis</span>
+                </h1>
 
-    <div class="max-w-4xl w-full px-6 lg:px-8 flex items-center justify-center">
-        <div class="w-full flex flex-col items-center gap-6">
-            <img class="mx-auto bg-transparent"
-                 src="{{ asset('images/lutscheralm-welkom.svg') }}"
-                 alt="lutscher alm">
+                <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snelle service en vakwerk voor elk merk.</p>
 
-            <a href="#"
-               class="cursor-pointer md:text-2xl text-lg font-medium bg-amber-900 py-3 px-3 text-gray-200 rounded-lg hover:bg-amber-800 transition">
-                Reserveer online
-            </a>
+                <div class="mt-2 flex flex-wrap items-center justify-center gap-3">
+                    <a href="/contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Contact</a>
+                    <a href="tel:" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 backdrop-blur transition">Bel direct</a>
+                </div>
+
+                <div class="mt-6 w-full max-w-xl rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 px-5 py-4 text-left text-white">
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm sm:text-base">
+                            <p class="font-semibold">{{ now()->isSunday() ? 'Vandaag gesloten' : 'Vandaag geopend' }}</p>
+                            <p class="text-white/80">Ma–Di 09:00–23:00 • Wo-Za 09:00–17:00</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-white/80">Klanttevredenheid</p>
+                            <p aria-label="Rating" class="font-semibold">★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
-    </div>
 
-    <!-- Scroll down arrow -->
-    <a href="#section2" id="section2"
-       class="absolute z-10 bottom-6 animate-bounce text-white"
-       aria-label="Scroll naar beneden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-             stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 9l-7 7-7-7"/>
-        </svg>
-    </a>
-</div >
-
-<!-- About section -->
-<section
-    class="relative py-16 px-6 bg-center bg-repeat"
-    style="background-image: url('https://lutscheralm.nl/wp-content/uploads/2022/11/patroon-lutscheralm.jpg');">
-    <!-- Overlay om patroon te verzachten -->
-    <div class="absolute inset-0 bg-white/80"></div> <!-- maak lichter/donkerder met /70 /90 -->
-
-    <div class="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center gap-4">
-        <h1 class="text-4xl font-vibes text-gray-900">Welkom bij de</h1>
-        <h1 class="text-blue-900 font-bold text-6xl">Lutscher Alm & <br> De Alm Hütte</h1>
-        <p class="text-lg text-gray-700">Bijkletsen, iets te vieren, lekker genieten of er gewoon even tussenuit. Al
-            meer dan 22 jaar is de Lutscher Alm in Lonneker een begrip in de regio als het gaat om een ongedwongen en
-            gezellig avondje uit in Oostenrijkse sfeer. Met zijn tweeën, je gezin, familie of een hele groep. Proef de
-            sfeer en bekijk alle mogelijkheden op deze website van de Lutscher Alm en onze Almhütte. </p>
-        <p class="text-lg text-gray-700">Tot snel!</p>
-        <p class="text-lg text-gray-900 font-bold">Team Lutscher Alm</p>
-    </div>
-</section>
-
-<section class="relative bg-cover bg-center bg-no-repeat h-[500px] flex items-center justify-center"
-         style="background-image: url('{{ asset('images/almhutte.webp') }}');">
-
-    <!-- Overlay (optioneel, donker laagje voor betere leesbaarheid) -->
-    <div class="absolute inset-0 bg-black/40"></div>
-
-    <!-- Content -->
-    <div class="relative z-10 text-center">
-        <!-- Dit kan ook gewoon een <h1> zijn -->
-        <img src="{{ asset('images/logo-almhutte-png.webp') }}"
-             alt="De Almhütte"
-             class="mx-auto mb-4 max-h-32">
-
-        <a class="cursor-pointer md:text-2xl text-lg font-medium bg-amber-900 py-3 px-3 text-gray-200 rounded-lg hover:bg-amber-800 transition"
-           href="#"> Feesten & Partijen bij de Almhütte
+        <a href="#section2" id="section2" class="absolute z-10 bottom-6 animate-bounce text-white" aria-label="Scroll naar beneden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
         </a>
     </div>
-</section>
 
+    <!-- Services tiles -->
+    <section id="section2" class="relative py-16 px-6 lg:px-8 bg-center bg-repeat">
+        <div class="relative z-10 mx-auto max-w-6xl">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <a href="/autoschade" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
+                    <img src="/images/autoschade.webp" alt="Autoschade herstellen" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+                        <h3 class="text-xl font-bold">Autoschade</h3>
+                        <p class="mt-1 text-white/80 text-sm">Schadeherstel, uitlijnen & spotrepair.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 rounded-lg bg-amber-400 px-4 py-2 font-semibold text-zinc-900 transition group-hover:bg-amber-300">
+            Lees meer
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+          </span>
+                    </div>
+                </a>
 
-{{--<div>--}}
-{{--    <div x-data="{--}}
-{{--    slides: [--}}
-{{--        {--}}
-{{--            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',--}}
-{{--            imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',--}}
-{{--        },--}}
-{{--        {--}}
-{{--            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-2.webp',--}}
-{{--            imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',--}}
-{{--        },--}}
-{{--        {--}}
-{{--            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-3.webp',--}}
-{{--            imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',--}}
-{{--        },--}}
-{{--    ],--}}
-{{--    currentSlideIndex: 1,--}}
-{{--    previous() {--}}
-{{--        if (this.currentSlideIndex > 1) {--}}
-{{--            this.currentSlideIndex = this.currentSlideIndex - 1--}}
-{{--        } else {--}}
-{{--            // If it's the first slide, go to the last slide--}}
-{{--            this.currentSlideIndex = this.slides.length--}}
-{{--        }--}}
-{{--    },--}}
-{{--    next() {--}}
-{{--        if (this.currentSlideIndex < this.slides.length) {--}}
-{{--            this.currentSlideIndex = this.currentSlideIndex + 1--}}
-{{--        } else {--}}
-{{--            // If it's the last slide, go to the first slide--}}
-{{--            this.currentSlideIndex = 1--}}
-{{--        }--}}
-{{--    },--}}
-{{--}" class="relative w-full overflow-hidden">--}}
+                <a href="/spuiterij" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
+                    <img src="/images/autospuiten.webp" alt="Autospuiterij en lakwerk" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+                        <h3 class="text-xl font-bold">Spuiterij</h3>
+                        <p class="mt-1 text-white/80 text-sm">Lakwerk, kleurbepaling & herstel.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 rounded-lg bg-amber-400 px-4 py-2 font-semibold text-zinc-900 transition group-hover:bg-amber-300">
+            Lees meer
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+          </span>
+                    </div>
+                </a>
 
-{{--        <!-- previous button -->--}}
-{{--        <button type="button"--}}
-{{--                class="absolute left-5 top-1/2 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 dark:bg-surface-dark/40 dark:text-on-surface-dark dark:hover:bg-surface-dark/60 dark:focus-visible:outline-primary-dark"--}}
-{{--                aria-label="previous slide" x-on:click="previous()">--}}
-{{--            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"--}}
-{{--                 stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">--}}
-{{--                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>--}}
-{{--            </svg>--}}
-{{--        </button>--}}
+                <a href="/banden-velgen" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
+                    <img src="/images/velgen.webp" alt="Banden en velgen service" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+                        <h3 class="text-xl font-bold">Banden &amp; Velgen</h3>
+                        <p class="mt-1 text-white/80 text-sm">Montage, balanceren & opslaan.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 rounded-lg bg-amber-400 px-4 py-2 font-semibold text-zinc-900 transition group-hover:bg-amber-300">
+            Lees meer
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+          </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-{{--        <!-- next button -->--}}
-{{--        <button type="button"--}}
-{{--                class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 dark:bg-surface-dark/40 dark:text-on-surface-dark dark:hover:bg-surface-dark/60 dark:focus-visible:outline-primary-dark"--}}
-{{--                aria-label="next slide" x-on:click="next()">--}}
-{{--            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"--}}
-{{--                 stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">--}}
-{{--                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>--}}
-{{--            </svg>--}}
-{{--        </button>--}}
+    <!-- Auto Horsthuis intro -->
+    <section class="py-12 px-6 lg:px-8 bg-white">
+        <div class="mx-auto max-w-6xl grid gap-8 lg:grid-cols-2 items-start">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900">AUTO HORSTHUIS</h2>
+                <p class="mt-3 text-zinc-700">
+                    Een ongelukje kan gebeuren en als u dan schade aan uw auto heeft is dat al vervelend genoeg.
+                    U wilt daar zo weinig mogelijk van merken. Auto Horsthuis herstelt niet alleen snel en vakkundig,
+                    maar verzorgt (indien gewenst) ook een belangrijk deel van de schade-afwikkeling voor u.
+                </p>
 
-{{--        <!-- slides -->--}}
-{{--        <!-- Change min-h-[50svh] to your preferred height size -->--}}
-{{--        <div class="relative min-h-screen w-full">--}}
-{{--            <template x-for="(slide, index) in slides">--}}
-{{--                <div x-show="currentSlideIndex == index + 1" class="absolute inset-0"--}}
-{{--                     x-transition.opacity.duration.1000ms>--}}
-{{--                    <img class="absolute w-full h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark"--}}
-{{--                         x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt"/>--}}
-{{--                </div>--}}
-{{--            </template>--}}
-{{--        </div>--}}
+                <h3 class="mt-6 text-xl font-semibold text-zinc-900">Onze diensten</h3>
+                <ul class="mt-3 space-y-3">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                        <span class="text-zinc-700">Volledig schadeherstel van uw voertuig</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                        <span class="text-zinc-700">Spuitwerk met de modernste technieken</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                        <span class="text-zinc-700">Ruim assortiment banden &amp; velgen van vele merken</span>
+                    </li>
+                </ul>
 
-{{--        <!-- indicators -->--}}
-{{--        <div--}}
-{{--            class="absolute rounded-radius bottom-3 md:bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-4 md:gap-3 bg-surface/75 px-1.5 py-1 md:px-2 dark:bg-surface-dark/75"--}}
-{{--            role="group" aria-label="slides">--}}
-{{--            <template x-for="(slide, index) in slides">--}}
-{{--                <button class="size-2 rounded-full transition bg-on-surface dark:bg-on-surface-dark"--}}
-{{--                        x-on:click="currentSlideIndex = index + 1"--}}
-{{--                        x-bind:class="[currentSlideIndex === index + 1 ? 'bg-on-surface dark:bg-on-surface-dark' : 'bg-on-surface/50 dark:bg-on-surface-dark/50']"--}}
-{{--                        x-bind:aria-label="'slide ' + (index + 1)"></button>--}}
-{{--            </template>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-</body>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="/contact" class="rounded-xl px-5 py-3 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Contact / Offerte</a>
+                    <a href="tel:0622373308" class="rounded-xl px-5 py-3 font-semibold bg-zinc-900 text-white hover:bg-zinc-800 transition">Bel 06 22 37 33 08</a>
+                </div>
+            </div>
 
-
-</html>
+            <div>
+                <img class="w-full h-full rounded-lg" src="/images/gt3rs.webp" alt="Porsche GT3 RS">
+            </div>
+        </div>
+    </section>
+@endsection
