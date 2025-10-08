@@ -10,10 +10,7 @@
         }
     },
     "routes": [
-        { "src": "/(favicon\\.ico|robots\\.txt|sitemap\\.xml)", "dest": "/public/$1" },
-        { "src": "/build/(.*)", "dest": "/public/build/$1" },
-        { "src": "/storage/(.*)", "dest": "/public/storage/$1" },
-        { "src": "/(.*\\.(?:png|jpg|jpeg|webp|svg|gif|css|js|txt|xml))", "dest": "/public/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
+
     ]
 }

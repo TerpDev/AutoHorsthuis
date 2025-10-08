@@ -1,5 +1,20 @@
 <?php
+
+declare(strict_types=1);
+
 $_SERVER['DOCUMENT_ROOT'] = __DIR__ . '/../public';
-$_SERVER['SCRIPT_FILENAME'] = __DIR__ . '/../public/index.php';
-$_SERVER['SCRIPT_NAME'] = '/index.php';
-require __DIR__ . '/../public/index.php';
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = require __DIR__ . '/../bootstrap/app.php';
+
+// ✅ Fix for Vercel: writable path
+$app->useStoragePath(sys_get_temp_dir());
+config(['view.compiled' => sys_get_temp_dir()]);
+
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+$request  = Illuminate\Http\Request::capture();
+$response = $kernel->handle($request);
+$response->send();
+$kernel->terminate($request, $response);
