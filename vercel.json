@@ -1,11 +1,13 @@
 {
     "version": 2,
     "framework": null,
-    "buildCommand": "npm install --no-dev --prefer-dist --optimize-autoloader && npm ci && npm run build",
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.7.4" }
     },
     "routes": [
+        { "src": "/build/(.*)", "dest": "/public/build/$1" },
+        { "src": "/images/(.*)", "dest": "/public/images/$1" },
+        { "src": "/(.*\\.(css|js|mjs|map|png|jpg|jpeg|webp|svg|ico|txt|json))", "dest": "/public/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "env": {
