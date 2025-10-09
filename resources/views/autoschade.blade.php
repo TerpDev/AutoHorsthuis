@@ -3,7 +3,7 @@
 
 @section('content')
     <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center"
-             style="background-image:url('{{ asset('images/autoschade.webp') }}');">
+             style="background-image:url('/images/autoschade.webp');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">Autoschade</p>
@@ -28,7 +28,7 @@
     <section class="py-4 px-6 lg:px-8 bg-zinc-50">
         <div class="mx-auto max-w-6xl grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/autoschade/spotrepair.webp') }}" alt="Spot repair" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/autoschade/spotrepair.webp" alt="Spot repair" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Spot repair</h3>
@@ -37,7 +37,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/autoschade/uitdeuken.webp') }}" alt="Uitdeuken zonder spuiten" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/autoschade/uitdeuken.webp" alt="Uitdeuken zonder spuiten" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Uitdeuken zonder spuiten</h3>
@@ -46,7 +46,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/autoschade/ruitreparatie.webp') }}" alt="Ruitreparatie" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/autoschade/ruitreparatie.webp" alt="Ruitreparatie" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Ruitreparatie</h3>
@@ -55,7 +55,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/autoschade/aluminiumherstel.webp') }}" alt="Aluminium herstel" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/autoschade/aluminiumherstel.webp" alt="Aluminium herstel" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Aluminium herstel</h3>

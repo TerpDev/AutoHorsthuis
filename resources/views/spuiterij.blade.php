@@ -3,7 +3,7 @@
 
 @section('content')
     <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center"
-             style="background-image:url('{{ asset('images/autospuiten.webp') }}');">
+             style="background-image: url('/images/autospuiten.webp');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">Spuiterij</p>
@@ -40,7 +40,7 @@
     <section class="py-6 px-6 lg:px-8 bg-zinc-50">
         <div class="mx-auto max-w-6xl grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/spuiterij/fijnspuitwerk.webp') }}" alt="Fijnspuitwerk" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/spuiterij/fijnspuitwerk.webp" alt="Fijnspuitwerk" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Fijnspuitwerk</h3>
@@ -49,7 +49,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/autoschade/spotrepair.webp') }}" alt="Spotrepair" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/autoschade/spotrepair.webp" alt="Spotrepair" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Spotrepair</h3>
@@ -58,7 +58,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/spuiterij/oldtimer.webp') }}" alt="Oldtimer spuiten" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/spuiterij/oldtimer.webp" alt="Oldtimer spuiten" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Oldtimer spuitwerk</h3>
@@ -67,7 +67,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="{{ asset('images/spuiterij/water.webp') }}" alt="Watergedragen lakken" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="images/spuiterij/water.webp" alt="Watergedragen lakken" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Watergedragen lakken</h3>
