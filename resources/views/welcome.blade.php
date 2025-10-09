@@ -20,7 +20,7 @@
                     Welkom bij <span class="block">Auto Horsthuis</span>
                 </h1>
 
-                <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snelle service en vakwerk voor elk merk.</p>
+                <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snel service en vakwerk voor elk merk.</p>
 
                 <div class="mt-2 flex flex-wrap items-center justify-center gap-3">
                     <a href="/contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg
