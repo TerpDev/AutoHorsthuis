@@ -4,8 +4,8 @@
 @section('content')
     <!-- Hero -->
     <div class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
-         style="background-image: url('/images/herobg.webp');">
-    <div class="absolute z-10 inset-0 bg-black/40"></div>
+         style="background-image: url('{{ asset('images/herobg.webp') }}');">
+        <div class="absolute z-10 inset-0 bg-black/40"></div>
 
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 font-body">
             <header class="pt-16 lg:pt-24 flex flex-col items-center text-center gap-6">
@@ -17,7 +17,7 @@
                 </div>
 
                 <h1 class="tracking-wide leading-[0.95] text-white drop-shadow-xl text-5xl sm:text-6xl lg:text-7xl bbh-sans-bogle-regular">
-                    Welkom bij <span class="block">Auto Horsthuiss</span>
+                    Welkom bij <span class="block">Auto Horsthuis</span>
                 </h1>
 
                 <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snel service en vakwerk voor elk merk.</p>
@@ -55,7 +55,7 @@
         <div class="relative z-10 mx-auto max-w-6xl">
             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 <a href="/autoschade" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
-                    <img src="images/autoschade.webp" alt="Autoschade herstellen" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src="{{asset('images/autoschade.webp')}}" alt="Autoschade herstellen" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                         <h3 class="text-xl font-bold">Autoschade</h3>
@@ -68,7 +68,7 @@
                 </a>
 
                 <a href="/spuiterij" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
-                    <img src="images/autospuiten.webp" alt="Autospuiterij en lakwerk" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src="{{asset('images/autospuiten.webp')}}" alt="Autospuiterij en lakwerk" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                         <h3 class="text-xl font-bold">Spuiterij</h3>
@@ -81,7 +81,7 @@
                 </a>
 
                 <a href="/banden-velgen" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
-                    <img src="images/velgen.webp" alt="Banden en velgen service" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src="{{asset('images/velgen.webp')}}" alt="Banden en velgen service" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                         <h3 class="text-xl font-bold">Banden &amp; Velgen</h3>
@@ -130,7 +130,7 @@
             </div>
 
             <div>
-                <img class="w-full h-full rounded-lg" src="images/gt3rs.webp" alt="Porsche GT3 RS">
+                <img class="w-full h-full rounded-lg" src="{{asset('images/gt3rs.webp')}}" alt="Porsche GT3 RS">
             </div>
         </div>
     </section>

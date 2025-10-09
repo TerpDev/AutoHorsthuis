@@ -3,7 +3,7 @@
 
 @section('content')
     <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center"
-             style="background-image:url('/images/velgen.webp');">
+             style="background-image:url('{{ asset('images/velgen.webp') }}');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">Banden &amp; Velgen</p>
@@ -31,7 +31,7 @@
     <section class="py-6 px-6 lg:px-8 bg-zinc-50">
         <div class="mx-auto max-w-6xl grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="images/banden-velgen/banden.webp" alt="Banden" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('images/banden-velgen/banden.webp') }}" alt="Banden" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Banden</h3>
@@ -40,7 +40,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="images/banden-velgen/velgen.webp" alt="Velgen" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('images/banden-velgen/velgen.webp') }}" alt="Velgen" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Velgen</h3>
@@ -49,7 +49,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="images/banden-velgen/materialen.webp" alt="Bandenmateriaal" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('images/banden-velgen/materialen.webp') }}" alt="Bandenmateriaal" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <h3 class="text-xl font-bold">Bandenmateriaal</h3>
@@ -58,7 +58,7 @@
             </article>
 
             <article class="group relative overflow-hidden rounded-2xl bg-black shadow-lg">
-                <img src="images/banden-velgen/wisselen.webp" alt="Banden wisselen" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('images/banden-velgen/wisselen.webp') }}" alt="Banden wisselen" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <div class="flex items-center justify-between">
