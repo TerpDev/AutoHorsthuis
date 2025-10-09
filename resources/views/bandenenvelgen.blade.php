@@ -10,7 +10,7 @@
             <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow">Banden, Velgen & Bandendienst</h1>
             <p class="mt-4 max-w-2xl mx-auto text-white/90">Alle A-merken én sterke prijs-kwaliteit banden. Lichtmetaal & staal, plus alles voor montage.</p>
             <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-                <a href="/contact" class="rounded-xl px-5 py-3 text-lg font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Offerte / Afspraak</a>
+                <a href="/contact" class="rounded-xl px-5 py-3 text-lg font-semibold bg-red-600 text-white hover:bg-red-500 transition">Offerte / Afspraak</a>
                 <a href="tel:0622373308" class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 backdrop-blur transition">Bel 06 22 37 33 08</a>
             </div>
         </div>

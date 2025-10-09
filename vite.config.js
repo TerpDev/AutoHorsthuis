@@ -14,4 +14,8 @@ export default defineConfig({
     server: {
         cors: true,
     },
+    build: {
+        assetsInlineLimit: 0,
+    },
+    base: '/', // Ensure all asset URLs are root-relative
 });

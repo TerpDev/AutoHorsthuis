@@ -23,7 +23,8 @@
                 <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snelle service en vakwerk voor elk merk.</p>
 
                 <div class="mt-2 flex flex-wrap items-center justify-center gap-3">
-                    <a href="/contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Contact</a>
+                    <a href="/contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg
+                    font-semibold bg-red-600 text-white hover:bg-red-500 transition">Contact</a>
                     <a href="tel:" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 backdrop-blur transition">Bel direct</a>
                 </div>
 

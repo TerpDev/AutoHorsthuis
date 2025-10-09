@@ -11,7 +11,7 @@
                 </p>
                 <div class="flex flex-col gap-3">
                     <a href="/contact"
-                       class="inline-flex items-center justify-center rounded-lg px-4 py-2 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">
+                       class="inline-flex items-center justify-center rounded-lg px-4 py-2 font-semibold bg-red-600 text-white hover:bg-red-500 transition">
                         Contact
                     </a>
                     <a href="tel:0622373308"

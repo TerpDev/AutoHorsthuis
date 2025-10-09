@@ -11,7 +11,7 @@
             <p class="mt-4 max-w-2xl mx-auto text-white/90">Vragen, offerte of afspraak? We helpen u graag verder.</p>
 
             <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-                <a href="tel:0622373308" class="rounded-xl px-5 py-3 text-lg font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Bel 06 22 37 33 08</a>
+                <a href="tel:0622373308" class="rounded-xl px-5 py-3 text-lg font-semibold bg-red-600 text-white hover:bg-red-500 transition">Bel 06 22 37 33 08</a>
                 <a href="mailto:info@autohorsthuis.nl" class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 transition">Mail ons</a>
             </div>
         </div>

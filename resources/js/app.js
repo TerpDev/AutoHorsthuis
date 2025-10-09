@@ -1,5 +1,6 @@
 // resources/js/app.js
-import '../css/app.css'
+//import tha app.css
+import '../css/app.css';
 import Alpine from 'alpinejs'
 
 window.Alpine = Alpine

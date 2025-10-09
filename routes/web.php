@@ -15,11 +15,7 @@ Route::get('/spuiterij', function () {
 Route::get('/banden-velgen', function () {
     return view('bandenenvelgen');
 })->name('bandenenvelgen');
-//Route::get('/contact', function () {
-//    return view('contact');
-//})->name('contact');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-
-// Form submit (POST)
-Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
