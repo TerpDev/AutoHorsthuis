@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Auto Horsthuis</title>
 
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-
+    
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Great+Vibes&family=Russo+One&display=swap" rel="stylesheet">
 
-    <link rel="preload" as="style" href="/build/assets/app-zJSN80QP.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BoazL5yy.js" /><link rel="stylesheet" href="/build/assets/app-zJSN80QP.css" data-navigate-track="reload" /><script type="module" src="/build/assets/app-BoazL5yy.js" data-navigate-track="reload"></script></head>
+    <script type="module" src="http://[::1]:5173/@vite/client" data-navigate-track="reload"></script><link rel="stylesheet" href="http://[::1]:5173/resources/css/app.css" data-navigate-track="reload" /><script type="module" src="http://[::1]:5173/resources/js/app.js" data-navigate-track="reload"></script></head>
 <body class="bg-white">
 <!-- NAVBAR -->
 <nav
@@ -42,7 +42,7 @@
         <div class="flex items-center justify-between h-24 lg:h-28 transition-all duration-300">
             <!-- Logo -->
             <a href="/" class="flex items-center">
-                <img src="/images/horsthuislogo.webp" alt="Logo" class="h-16 w-auto lg:h-20" />
+                <img src="https://localhost/images/horsthuislogo.webp" alt="Logo" class="h-16 w-auto lg:h-20" />
             </a>
 
             <!-- Desktop menu -->
@@ -120,16 +120,16 @@
 <main class="min-h-screen">
         <!-- Hero -->
     <div class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
-         style="background-image: url('/images/herobg.webp');">
+         style="background-image: url('https://localhost/images/herobg.webp');">
         <div class="absolute z-10 inset-0 bg-black/40"></div>
 
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 font-body">
-            <header class="pt-16 lg:pt-24 flex flex-col items-center text-center gap-6">
+            <div class="pt-16 lg:pt-24 flex flex-col items-center text-center gap-6">
                 <div class="flex flex-wrap items-center justify-center gap-2">
                     <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">APK</span>
                     <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Onderhoud</span>
                     <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Diagnose</span>
-                    <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Banden & Remmen</span>
+                    <span class="text-xs tracking-wider uppercase bg-white/10 text-white/90 px-3 py-1 rounded-full backdrop-blur">Gespcialiseerd in banden/velgen</span>
                 </div>
 
                 <h1 class="tracking-wide leading-[0.95] text-white drop-shadow-xl text-5xl sm:text-6xl lg:text-7xl bbh-sans-bogle-regular">
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
 
         <a href="#section2" id="section2" class="absolute z-10 bottom-6 animate-bounce text-white" aria-label="Scroll naar beneden">
@@ -165,13 +165,170 @@
             </svg>
         </a>
     </div>
+    
+    <section id="velgen" class="bg-zinc-200 py-10 px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+            <div class="grid items-center gap-8 md:grid-cols-2">
+                <!-- Tekst -->
+                <div>
+                    <div class="rounded-2xl bg-black/60 border border-white/10 text-white shadow-xl backdrop-blur p-6 sm:p-7">
+                        <div class="mb-2 inline-flex items-center gap-2">
+                            <span class="rounded-full bg-amber-400 text-zinc-900 px-3 py-1 text-xs font-semibold">Top keuze</span>
+                            <span class="text-[11px] uppercase tracking-wider bg-white/10 text-white/90 px-3 py-1 rounded-full">Specialisme</span>
+                        </div>
+                        <header class="text-left">
+                            <h2 class="text-2xl sm:text-3xl bbh-sans-bogle-regular tracking-wide">VELGEN &amp; BANDENSERVICE</h2>
+                            <p class="mt-2 text-white/80">
+                                Grip, comfort en veiligheid. Levering, montage en onderhoud van banden &amp; velgen voor alle merken—snel en vakkundig.
+                            </p>
+                            <div class="mt-3 flex flex-wrap items-center gap-2">
+                                <span class="text-[11px] uppercase tracking-wider bg-white/10 text-white/90 px-3 py-1 rounded-full">Zomer • Winter • All-season</span>
+                                <span class="text-[11px] uppercase tracking-wider bg-white/10 text-white/90 px-3 py-1 rounded-full">TPMS</span>
+                                <span class="text-[11px] uppercase tracking-wider bg-white/10 text-white/90 px-3 py-1 rounded-full">Uitlijnen &amp; balanceren</span>
+                            </div>
+                        </header>
+
+                        <!-- Korte bullets -->
+                        <ul class="mt-4 space-y-2.5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                                <span class="text-white/90">Nieuwe banden (A-merken &amp; budget) vakkundig gemonteerd</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                                <span class="text-white/90">Balanceren &amp; uitlijnen voor strak rijgedrag</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                                <span class="text-white/90">Seizoenswissel + (beperkt) opslag</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
+                                <span class="text-white/90">Velgservice &amp; TPMS uitlezen/plaatsen</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTA -->
+                        <div class="mt-5 flex flex-wrap gap-2.5">
+                            <a href="/banden-velgen" class="rounded-lg px-4 py-2.5 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Meer over velgen & banden</a>
+                            <a href="/contact" class="rounded-lg px-4 py-2.5 font-semibold bg-white/10 text-white hover:bg-white/20 transition">Afspraak / Offerte</a>
+                            <a href="tel:0622373308" class="rounded-lg px-4 py-2.5 font-semibold bg-white/10 text-white hover:bg-white/20 transition">Bel 06 22 37 33 08</a>
+                        </div>
+
+                        <p class="mt-4 text-[12px] text-white/60">
+                            Beschikbaar: Michelin • Continental • Bridgestone • Pirelli • Goodyear • Hankook • Vredestein
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Foto rechts -->
+                <div class="order-first md:order-last">
+                    <div class="relative overflow-hidden rounded-2xl bg-black shadow-xl">
+                        <img
+                            src="https://localhost/images/velgenenbanden.webp"
+                            alt="Banden & velgen montage"
+                            class="w-full h-64 sm:h-80 md:h-[420px] object-cover"
+                            loading="lazy"
+                        />
+                        <div class="absolute bottom-3 right-3 rounded-lg bg-black/50 text-white backdrop-blur px-3 py-1.5 text-xs">
+                            Specialist in Banden &amp; Velgen
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="autoschade" class="bg-zinc-200 py-10 px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+            <div class="grid items-center gap-8 md:grid-cols-2">
+                <!-- Foto links -->
+                <div class="order-first md:order-none">
+                    <div class="relative overflow-hidden rounded-2xl bg-black shadow-xl">
+                        <img
+                            src="https://localhost/images/autoschade.webp"
+                            alt="Autoschade herstel"
+                            class="w-full h-64 sm:h-80 md:h-[420px] object-cover"
+                            loading="lazy"
+                        />
+                        <div class="absolute bottom-3 right-3 rounded-lg bg-black/50 text-white backdrop-blur px-3 py-1.5 text-xs">
+                            Schadeherstel
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tekst rechts -->
+                <div>
+                    <div class="rounded-2xl bg-black/60 border border-white/10 text-white shadow-xl backdrop-blur p-6 sm:p-7">
+                        <header>
+                            <h2 class="text-2xl sm:text-3xl bbh-sans-bogle-regular tracking-wide">AUTOSCHADE</h2>
+                            <p class="mt-2 text-white/80">Van kleine krassen tot groter herstel—snel, vakkundig en eerlijk advies.</p>
+                        </header>
+                        <ul class="mt-4 space-y-2.5">
+                            <li class="flex gap-2.5"><span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span><span class="text-white/90">Spotrepair & uitdeuken zonder spuiten</span></li>
+                            <li class="flex gap-2.5"><span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span><span class="text-white/90">Ruitreparatie & parkeerschade</span></li>
+                            <li class="flex gap-2.5"><span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span><span class="text-white/90">Afhandeling verzekering (indien gewenst)</span></li>
+                        </ul>
+                        <div class="mt-5 flex flex-wrap gap-2.5">
+                            <a href="/autoschade" class="rounded-lg px-4 py-2.5 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Meer over autoschade</a>
+                            <a href="/contact" class="rounded-lg px-4 py-2.5 font-semibold bg-white/10 text-white hover:bg-white/20 transition">Offerte / Afspraak</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="spuiterij" class="bg-zinc-200 py-10 px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl">
+            <div class="grid items-center gap-8 md:grid-cols-2">
+                <!-- Tekst -->
+                <div>
+                    <div class="rounded-2xl bg-black/60 border border-white/10 text-white shadow-xl backdrop-blur p-6 sm:p-7">
+                        <header>
+                            <h2 class="text-2xl sm:text-3xl bbh-sans-bogle-regular tracking-wide">SPUITERIJ</h2>
+                            <p class="mt-2 text-white/80">Fijnspuitwerk, kleurbepaling en spotrepair met fabrieksstrak resultaat.</p>
+                        </header>
+                        <ul class="mt-4 space-y-2.5">
+                            <li class="flex gap-2.5"><span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span><span class="text-white/90">Watergedragen lakken & moderne spuitcabine</span></li>
+                            <li class="flex gap-2.5"><span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span><span class="text-white/90">Oldtimers, motoren en brommers</span></li>
+                            <li class="flex gap-2.5"><span class="mt-0.5 h-5 w-5 flex items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span><span class="text-white/90">Snelle doorlooptijd bij kleine reparaties</span></li>
+                        </ul>
+                        <div class="mt-5 flex flex-wrap gap-2.5">
+                            <a href="/spuiterij" class="rounded-lg px-4 py-2.5 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Meer over spuiterij</a>
+                            <a href="/contact" class="rounded-lg px-4 py-2.5 font-semibold bg-white/10 text-white hover:bg-white/20 transition">Offerte / Afspraak</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto rechts -->
+                <div class="order-first md:order-last">
+                    <div class="relative overflow-hidden rounded-2xl bg-black shadow-xl">
+                        <img
+                            src="https://localhost/images/autospuiten.webp"
+                            alt="Spuiterij & fijnspuitwerk"
+                            class="w-full h-64 sm:h-80 md:h-[420px] object-cover"
+                            loading="lazy"
+                        />
+                        <div class="absolute bottom-3 right-3 rounded-lg bg-black/50 text-white backdrop-blur px-3 py-1.5 text-xs">
+                            Fijnspuitwerk
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Services tiles -->
-    <section id="section2" class="relative py-16 px-6 lg:px-8 bg-center bg-repeat">
+    <!--<section id="section2" class="relative py-16 px-6 lg:px-8 bg-center bg-repeat">
         <div class="relative z-10 mx-auto max-w-6xl">
             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 <a href="/autoschade" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
-                    <img src="/images/autoschade.webp" alt="Autoschade herstellen" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src="https://localhost/images/autoschade.webp" alt="Autoschade herstellen" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                         <h3 class="text-xl font-bold">Autoschade</h3>
@@ -184,7 +341,7 @@
                 </a>
 
                 <a href="/spuiterij" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
-                    <img src="/images/autospuiten.webp" alt="Autospuiterij en lakwerk" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src="https://localhost/images/autospuiten.webp" alt="Autospuiterij en lakwerk" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                         <h3 class="text-xl font-bold">Spuiterij</h3>
@@ -197,7 +354,7 @@
                 </a>
 
                 <a href="/banden-velgen" class="group relative overflow-hidden rounded-2xl shadow-lg bg-black">
-                    <img src="/images/velgen.webp" alt="Banden en velgen service" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src="https://localhost/images/velgen.webp" alt="Banden en velgen service" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                         <h3 class="text-xl font-bold">Banden &amp; Velgen</h3>
@@ -210,46 +367,9 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section>-!>
 
-    <!-- Auto Horsthuis intro -->
-    <section class="py-12 px-6 lg:px-8 bg-white">
-        <div class="mx-auto max-w-6xl grid gap-8 lg:grid-cols-2 items-start">
-            <div>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900">AUTO HORSTHUIS</h2>
-                <p class="mt-3 text-zinc-700">
-                    Een ongelukje kan gebeuren en als u dan schade aan uw auto heeft is dat al vervelend genoeg.
-                    U wilt daar zo weinig mogelijk van merken. Auto Horsthuis herstelt niet alleen snel en vakkundig,
-                    maar verzorgt (indien gewenst) ook een belangrijk deel van de schade-afwikkeling voor u.
-                </p>
-
-                <h3 class="mt-6 text-xl font-semibold text-zinc-900">Onze diensten</h3>
-                <ul class="mt-3 space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
-                        <span class="text-zinc-700">Volledig schadeherstel van uw voertuig</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
-                        <span class="text-zinc-700">Spuitwerk met de modernste technieken</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-amber-400 text-zinc-900 text-xs font-bold">✓</span>
-                        <span class="text-zinc-700">Ruim assortiment banden &amp; velgen van vele merken</span>
-                    </li>
-                </ul>
-
-                <div class="mt-6 flex flex-wrap gap-3">
-                    <a href="/contact" class="rounded-xl px-5 py-3 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Contact / Offerte</a>
-                    <a href="tel:0622373308" class="rounded-xl px-5 py-3 font-semibold bg-zinc-900 text-white hover:bg-zinc-800 transition">Bel 06 22 37 33 08</a>
-                </div>
-            </div>
-
-            <div>
-                <img class="w-full h-full rounded-lg" src="/images/gt3rs.webp" alt="Porsche GT3 RS">
-            </div>
-        </div>
-    </section>
+    <!- Auto Horsthuis intro -->
 </main>
 
 <footer class="bg-black text-gray-300">
@@ -258,7 +378,7 @@
             <!-- Brand / CTA -->
             <div class="space-y-3">
                 <a href="/" class="inline-flex items-center">
-                    <img src="/images/horsthuislogo.webp" alt="Auto Horsthuis" class="h-16 w-auto lg:h-20" />
+                    <img src="https://localhost/images/horsthuislogo.webp" alt="Auto Horsthuis" class="h-16 w-auto lg:h-20" />
                 </a>
                 <p class="text-sm text-gray-400">
                     Eerlijk advies, snelle service en vakwerk voor elk merk.
