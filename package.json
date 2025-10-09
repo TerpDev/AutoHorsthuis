@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "vercel-build": "composer install --no-dev --optimize-autoloader && php artisan config:cache && npm ci && npm run build"
+
     },
     "dependencies": {
         "@tailwindcss/postcss": "^4.1.14",
