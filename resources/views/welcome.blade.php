@@ -17,7 +17,7 @@
                 </div>
 
                 <h1 class="tracking-wide leading-[0.95] text-white drop-shadow-xl text-5xl sm:text-6xl lg:text-7xl bbh-sans-bogle-regular">
-                    Welkom bij <span class="block">Auto Horsthuis</span>
+                    Welkom bij <span class="block">Auto Horsthuiss</span>
                 </h1>
 
                 <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snel service en vakwerk voor elk merk.</p>
