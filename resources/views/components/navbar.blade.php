@@ -15,7 +15,7 @@
         <div class="flex items-center justify-between h-24 lg:h-28 transition-all duration-300">
             <!-- Logo -->
             <a href="/" class="flex items-center">
-                <img src="{{ asset('images/horsthuislogo.webp') }}" alt="Logo" class="h-16 w-auto lg:h-20" />
+                <img src="images/horsthuislogo.webp" alt="Logo" class="h-16 w-auto lg:h-20" />
             </a>
 
             <!-- Desktop menu -->

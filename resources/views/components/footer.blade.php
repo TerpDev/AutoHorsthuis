@@ -4,7 +4,7 @@
             <!-- Brand / CTA -->
             <div class="space-y-3">
                 <a href="/" class="inline-flex items-center">
-                    <img src="{{ asset('images/horsthuislogo.webp') }}" alt="Auto Horsthuis" class="h-16 w-auto lg:h-20" />
+                    <img src="images/horsthuislogo.webp" alt="Auto Horsthuis" class="h-16 w-auto lg:h-20" />
                 </a>
                 <p class="text-sm text-gray-400">
                     Eerlijk advies, snelle service en vakwerk voor elk merk.
