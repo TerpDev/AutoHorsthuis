@@ -23,10 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Great+Vibes&family=Russo+One&display=swap" rel="stylesheet">
 
-    <link rel="preload" as="style" href="/build/assets/app-*.css">
-    <link rel="modulepreload" as="script" href="/build/assets/app-*.js">
-    <link rel="stylesheet" href="/build/assets/app-*.css">
-    <script type="module" src="/build/assets/app-*.js"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-white">
 <x-navbar/>
