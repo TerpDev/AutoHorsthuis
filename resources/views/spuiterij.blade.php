@@ -36,8 +36,7 @@
                 <p class="mt-3 text-zinc-700">
                     Auto Horsthuis in Oldenzaal is gespecialiseerd in alle soorten autoschades,
                     <strong>fijnspuitwerk</strong> en
-                    <strong>spotrepair</strong> van uw auto, motor of brommer. Ook voor het vakkundig repareren van
-                    deuken, krassen en parkeerschades.
+                    <strong>spotrepair</strong> van uw auto.
                 </p>
                 <p class="mt-3 text-zinc-700">
                     Ook uw <strong>oldtimer</strong> is bij ons in goede handen. Met de juiste apparatuur en speciale
