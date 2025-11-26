@@ -3,7 +3,7 @@
 
 @section('content')
     {{-- HERO --}}
-    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pb-4"
+    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pb-4 lg:pt-32"
              style="background-image:url('{{ asset('images/banden-velgen/bgbanden-velgen.webp') }}');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
