@@ -1,10 +1,21 @@
 <!-- NAVBAR -->
 <nav
     x-data="{
-        mobileOpen:false, scrolled:false, lOpen:false, hOpen:false, cOpen:false,
+        mobileOpen:false,
+        scrolled:false,
+        lOpen:false,
+        hOpen:false,
+        cOpen:false,
         forceDark: {{ request()->is('LutscherAlmGallerij', 'AlmHutteGallerij') || request()->is('vacatures/*') ? 'true' : 'false' }},
     }"
-    x-init="scrolled = window.scrollY > 10"
+    x-init="
+        scrolled = window.scrollY > 10;
+
+        // body scroll blokkeren als mobile menu open is
+        $watch('mobileOpen', value => {
+            document.body.classList.toggle('overflow-hidden', value);
+        });
+    "
     @scroll.window="if (!mobileOpen) { scrolled = window.scrollY > 10 }"
     :class="forceDark
         ? 'bg-black'
@@ -13,7 +24,15 @@
             : (scrolled ? 'bg-black/80 shadow-lg backdrop-blur-sm' : 'bg-transparent'))"
     class="fixed top-0 left-0 w-full z-50 transition-colors duration-300"
 >
-    <div class="mx-auto w-full max-w-6xl px-6 lg:px-8">
+    {{-- FULLSCREEN OVERLAY ACHTER HET MENU (MOBIEL) --}}
+    <div x-cloak
+         x-show="mobileOpen"
+         x-transition.opacity
+         class="fixed inset-0 bg-black/80 backdrop-blur-sm lg:hidden z-40">
+    </div>
+
+    {{-- NAV CONTENT --}}
+    <div class="relative mx-auto w-full max-w-6xl px-6 lg:px-8 z-50">
         <div class="flex items-center justify-between h-24 lg:h-28 transition-all duration-300">
             <!-- Logo -->
             <a href="/" class="flex items-center">
@@ -71,7 +90,7 @@
             </button>
         </div>
 
-        <!-- Mobile menu (mooi paneel) -->
+        <!-- Mobile menu panel -->
         <div x-cloak
              x-show="mobileOpen"
              x-transition:enter="transition ease-out duration-300"
@@ -115,7 +134,7 @@
                     </a>
                 </div>
 
-                <!-- CTA's onderin mobiel menu -->
+                <!-- CTA's onder in menu -->
                 <div class="px-5 pb-4 pt-2 flex flex-col gap-2 text-sm">
                     <a href="tel:0622373308"
                        class="w-full inline-flex items-center justify-center rounded-xl bg-red-600 px-4 py-2.5 font-semibold text-white hover:bg-red-500 transition">
