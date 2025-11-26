@@ -2,25 +2,28 @@
 @section('title', 'Spuiterij | Auto Horsthuis')
 
 @section('content')
-    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-16 lg:pt-0"
+    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-32 lg:pt-0"
              style="background-image:url('{{ asset('images/autospuiten.webp') }}');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">
                 Spuiterij</p>
-            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow">Spuiterij &
-                Fijnspuitwerk</h1>
+            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow">
+                Spuiterij & Fijnspuitwerk
+            </h1>
             <p class="mt-4 max-w-2xl mx-auto text-white/90">
                 Gespecialiseerd in schadeherstel, fijnspuitwerk en spotrepair voor auto, motor en brommer.
                 Vakkundig, strak resultaat en duidelijke prijzen.
             </p>
             <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
                 <a href="/contact"
-                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-red-600 text-white hover:bg-red-500 transition">Offerte
-                    / Afspraak</a>
+                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-red-600 text-white hover:bg-red-500 transition">
+                    Offerte / Afspraak
+                </a>
                 <a href="tel:0622373308"
-                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 backdrop-blur transition">Bel
-                    06 22 37 33 08</a>
+                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 backdrop-blur transition">
+                    Bel 06 22 37 33 08
+                </a>
             </div>
         </div>
     </section>
