@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 items-start">
             <!-- Brand / CTA -->
             <div class="space-y-3">
-                <a href="/" class="inline-flex items-center">
+                <a href="/" class="flex justify-center items-center">
                     <img src="{{ asset('images/horsthuislogo.webp') }}" alt="Auto Horsthuis" class="h-16 w-auto lg:h-20" />
                 </a>
                 <p class="text-sm text-gray-400">

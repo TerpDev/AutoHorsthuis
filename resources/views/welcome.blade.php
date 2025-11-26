@@ -97,12 +97,7 @@
                         <div class="mt-5 flex flex-wrap gap-2.5">
                             <a href="/banden-velgen" class="rounded-lg px-4 py-2.5 font-semibold bg-amber-400 text-zinc-900 hover:bg-amber-300 transition">Meer over velgen & banden</a>
                             <a href="/contact" class="rounded-lg px-4 py-2.5 font-semibold bg-white/10 text-white hover:bg-white/20 transition">Afspraak / Offerte</a>
-                            <a href="tel:0622373308" class="rounded-lg px-4 py-2.5 font-semibold bg-white/10 text-white hover:bg-white/20 transition">Bel 06 22 37 33 08</a>
                         </div>
-
-                        <p class="mt-4 text-[12px] text-white/60">
-                            Beschikbaar: Michelin • Continental • Bridgestone • Pirelli • Goodyear • Hankook • Vredestein
-                        </p>
                     </div>
                 </div>
 
