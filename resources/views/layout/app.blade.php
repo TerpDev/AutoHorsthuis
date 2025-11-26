@@ -25,7 +25,7 @@
 <body class="bg-white">
 <x-navbar/>
 
-<main class="min-h-screen">
+<main class="min-h-screen pt-0 lg:pt-32">
     @yield('content')
 </main>
 

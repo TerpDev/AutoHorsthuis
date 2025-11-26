@@ -2,7 +2,7 @@
 @section('title', 'Contact | Auto Horsthuis')
 
 @section('content')
-    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-32 lg:pt-0"
+    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center"
              style="background-image: url('/images/contact-hero.webp');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
