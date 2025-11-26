@@ -18,7 +18,7 @@
                     / Afspraak</a>
                 <a href="tel:0622373308"
                    class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 backdrop-blur transition">Bel
-                    06 22 37 33 08</a>
+                    ons</a>
             </div>
         </div>
     </section>
