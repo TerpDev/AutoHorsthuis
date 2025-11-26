@@ -2,14 +2,15 @@
 @section('title', 'Spuiterij | Auto Horsthuis')
 
 @section('content')
-    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pb-4 lg:pt-32"
+    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-24 lg:pt-28"
              style="background-image:url('{{ asset('images/autospuiten.webp') }}');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">
-                Spuiterij</p>
+                Spuiterij
+            </p>
             <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow">
-                Spuiterij & Fijnspuitwerk
+                Spuiterij &amp; Fijnspuitwerk
             </h1>
             <p class="mt-4 max-w-2xl mx-auto text-white/90">
                 Gespecialiseerd in schadeherstel, fijnspuitwerk en spotrepair voor auto, motor en brommer.

@@ -2,22 +2,29 @@
 @section('title', 'Contact | Auto Horsthuis')
 
 @section('content')
-    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center lg:pt-32"
+    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-24 lg:pt-28"
              style="background-image: url('/images/contact-hero.webp');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">
-                Contact</p>
-            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow">Neem contact op</h1>
-            <p class="mt-4 max-w-2xl mx-auto text-white/90">Vragen, offerte of afspraak? We helpen u graag verder.</p>
+                Contact
+            </p>
+            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide drop-shadow">
+                Neem contact op
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-white/90">
+                Vragen, offerte of afspraak? We helpen u graag verder.
+            </p>
 
             <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
                 <a href="tel:0622373308"
-                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-red-600 text-white hover:bg-red-500 transition">Bel
-                    06 22 37 33 08</a>
+                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-red-600 text-white hover:bg-red-500 transition">
+                    Bel 06 22 37 33 08
+                </a>
                 <a href="mailto:info@autohorsthuis.nl"
-                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 transition">Mail
-                    ons</a>
+                   class="rounded-xl px-5 py-3 text-lg font-semibold bg-white/10 text-white hover:bg-white/20 transition">
+                    Mail ons
+                </a>
             </div>
         </div>
     </section>
