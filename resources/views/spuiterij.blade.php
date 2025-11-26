@@ -13,8 +13,7 @@
                 Spuiterij &amp; Fijnspuitwerk
             </h1>
             <p class="mt-4 max-w-2xl mx-auto text-white/90">
-                Gespecialiseerd in schadeherstel, fijnspuitwerk en spotrepair voor auto, motor en brommer.
-                Vakkundig, strak resultaat en duidelijke prijzen.
+                Gespecialiseerd in schadeherstel, fijnspuitwerk en spotrepair voor auto.
             </p>
             <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
                 <a href="/contact"
@@ -36,7 +35,8 @@
                 <p class="mt-3 text-zinc-700">
                     Auto Horsthuis in Oldenzaal is gespecialiseerd in alle soorten autoschades,
                     <strong>fijnspuitwerk</strong> en
-                    <strong>spotrepair</strong> van uw auto.
+                    <strong>spotrepair</strong> van uw auto, motor of brommer. Ook voor het vakkundig repareren van
+                    deuken, krassen en parkeerschades.
                 </p>
                 <p class="mt-3 text-zinc-700">
                     Ook uw <strong>oldtimer</strong> is bij ons in goede handen. Met de juiste apparatuur en speciale
