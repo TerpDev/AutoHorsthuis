@@ -133,56 +133,6 @@
     </section>
 
 
-    <section class="py-12 px-6 lg:px-8 bg-white">
-        <div class="mx-auto max-w-6xl">
-            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-                <div>
-                    <p class="text-xs font-semibold tracking-[0.2em] uppercase text-amber-500">
-                        Impressie
-                    </p>
-                    <h2 class="mt-2 text-2xl sm:text-3xl font-bold text-zinc-900">
-                        Een kijkje in de werkplaats
-                    </h2>
-                    <p class="mt-3 text-zinc-700 max-w-xl">
-                        Hieronder een paar voorbeelden van montage, velgensets en de werkplaats.
-                        Zo krijgt u een gevoel bij wat we doen.
-                    </p>
-                </div>
-                <a href="/contact"
-                   class="inline-flex items-center justify-center rounded-xl border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-50">
-                    Stel uw vraag direct
-                </a>
-            </div>
-
-            <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="group relative overflow-hidden rounded-2xl bg-zinc-100">
-                    <img src="{{ asset('images/banden-velgen/impressie1.webp') }}" alt="Montage banden"
-                         class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
-                         loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl bg-zinc-100">
-                    <img src="{{ asset('images/banden-velgen/impressie2.webp') }}" alt="Velgenset op auto"
-                         class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
-                         loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl bg-zinc-100 lg:row-span-2 lg:h-full">
-                    <img src="{{ asset('images/banden-velgen/impressie3.webp') }}" alt="Werkplaats"
-                         class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                         loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl bg-zinc-100">
-                    <img src="{{ asset('images/banden-velgen/impressie4.webp') }}" alt="Detail velg"
-                         class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
-                         loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl bg-zinc-100">
-                    <img src="{{ asset('images/banden-velgen/impressie5.webp') }}" alt="Set in opslag"
-                         class="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
-                         loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="relative py-14 bg-cover bg-center"
              style="background-image:url('{{ asset('images/cta.jpeg') }}');">
         <div class="absolute inset-0 bg-black/70"></div>
