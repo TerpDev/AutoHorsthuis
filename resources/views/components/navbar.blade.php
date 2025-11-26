@@ -80,11 +80,11 @@
              class="lg:hidden pb-6 text-white bg-black/90 backdrop-blur-sm rounded-b-xl"
         >
             <div class="flex flex-col gap-1 pt-3">
-                <a href="/" class="px-4 py-2 hover:text-amber-500 transition {{ request()->is('/') ? 'text-amber-400 font-semibold' : '' }}">Home</a>
-                <a href="/autoschade" class="px-4 py-2 hover:text-amber-500 transition {{ request()->is('autoschade') ? 'text-amber-400 font-semibold' : '' }}">Autoschade</a>
-                <a href="/spuiterij" class="px-4 py-2 hover:text-amber-500 transition {{ request()->is('spuiterij') ? 'text-amber-400 font-semibold' : '' }}">Spuiterij</a>
-                <a href="/banden-velgen" class="px-4 py-2 hover:text-amber-500 transition {{ request()->is('banden-velgen') ? 'text-amber-400 font-semibold' : '' }}">Banden/Velgen</a>
-                <a href="/contact" class="px-4 py-2 hover:text-amber-500 transition {{ request()->is('contact') ? 'text-amber-400 font-semibold' : '' }}">Contact</a>
+                <a href="/" class="px-4 py-2 {{ request()->is('/') ? 'text-red-500 font-semibold' : '' }}">Home</a>
+                <a href="/autoschade" class="px-4 py-2 {{ request()->is('autoschade') ? 'text-red-500 font-semibold' : '' }}">Autoschade</a>
+                <a href="/spuiterij" class="px-4 py-2  {{ request()->is('spuiterij') ? 'text-red-500 font-semibold' : '' }}">Spuiterij</a>
+                <a href="/banden-velgen" class="px-4 py-2  {{ request()->is('banden-velgen') ? 'text-red-500 font-semibold' : '' }}">Banden/Velgen</a>
+                <a href="/contact" class="px-4 py-2  {{ request()->is('contact') ? 'text-red-500 font-semibold' : '' }}">Contact</a>
             </div>
         </div>
     </div>

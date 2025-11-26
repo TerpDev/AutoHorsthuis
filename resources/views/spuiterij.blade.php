@@ -2,7 +2,7 @@
 @section('title', 'Spuiterij | Auto Horsthuis')
 
 @section('content')
-    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center"
+    <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center pt-16 lg:pt-0"
              style="background-image:url('{{ asset('images/autospuiten.webp') }}');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
