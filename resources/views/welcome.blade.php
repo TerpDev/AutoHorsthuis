@@ -4,8 +4,8 @@
 @section('content')
     <!-- Hero -->
     <div class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
-         style="background-image: url('{{ asset('images/herobg.webp') }}');">
-        <div class="absolute z-10 inset-0 bg-black/40"></div>
+         style="background-image: url('{{ asset('images/bg.webp') }}');">
+        <div class="absolute z-10 inset-0 bg-black/70"></div>
 
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 font-body">
             <div class="pt-16 lg:pt-24 flex flex-col items-center text-center gap-6">
@@ -20,7 +20,8 @@
                     Welkom bij <span class="block">Auto Horsthuis</span>
                 </h1>
 
-                <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snel service en vakwerk voor elk merk.</p>
+                <p class="max-w-2xl text-white/90 text-base sm:text-lg">Eerlijk advies, snel service en vakwerk voor elk merk. Gespecialiseerd in losse velgen.
+                Mogelijk met 2 dagen gerepareerd en terug bij de klant</p>
 
                 <div class="mt-2 flex flex-wrap items-center justify-center gap-3">
                     <a href="/contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3 text-lg
@@ -192,7 +193,7 @@
                 <div class="order-first md:order-last">
                     <div class="relative overflow-hidden rounded-2xl bg-black shadow-xl">
                         <img
-                            src="{{ asset('images/autospuiten.webp') }}"
+                            src="{{ asset('images/spuiterij/spuitwerk.webp') }}"
                             alt="Spuiterij & fijnspuitwerk"
                             class="w-full h-64 sm:h-80 md:h-[420px] object-cover"
                             loading="lazy"

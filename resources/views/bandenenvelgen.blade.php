@@ -3,7 +3,7 @@
 
 @section('content')
     <section class="relative min-h-[55vh] flex items-center justify-center bg-cover bg-center"
-             style="background-image:url('{{ asset('images/velgen.webp') }}');">
+             style="background-image:url('{{ asset('images/banden-velgen/bgbanden-velgen.webp') }}');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 mx-auto max-w-6xl px-6 lg:px-8 text-center text-white">
             <p class="text-xs tracking-wider uppercase bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur">Banden &amp; Velgen</p>
@@ -63,7 +63,6 @@
                 <div class="absolute inset-x-0 bottom-0 p-5 text-white">
                     <div class="flex items-center justify-between">
                         <h3 class="text-xl font-bold">Banden wisselen</h3>
-                        <span class="rounded-md bg-amber-400 text-zinc-900 px-2 py-1 text-xs font-semibold">vanaf €25</span>
                     </div>
                     <p class="mt-1 text-white/80 text-sm">Wissel + (indien ruimte) opslag van uw set.</p>
                 </div>
